@@ -1,0 +1,856 @@
+[
+  {
+    "name": "Plank Knee Tuck (Bent-Knee Pike)",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "hip flexors",
+      "shoulders",
+      "quadriceps"
+    ],
+    "instructions": [
+      "Place forearms or hands on the dual padded sleds with feet anchored on the floor behind the board, or place feet on the sleds with hands on the board's corner handles.",
+      "Engage your core to slide the sleds along the twin tracks toward your chest, bending the knees and lifting the hips slightly.",
+      "Pause at peak contraction, then control the sleds back out to a full plank position.",
+      "Maintain a flat lower back without sagging at full extension."
+    ],
+    "category": "strength",
+    "id": "Plank_Knee_Tuck_Bent_Knee_Pike",
+    "images": [
+      "Plank_Knee_Tuck_Bent_Knee_Pike.png"
+    ]
+  },
+  {
+    "name": "Plank to Pike (Straight-Leg)",
+    "force": "pull",
+    "level": "advanced",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "shoulders",
+      "hamstrings",
+      "calves"
+    ],
+    "instructions": [
+      "Set your feet onto the sliding padded sleds and place your hands firmly on the stationary platform base in a high plank.",
+      "Keeping legs completely straight, contract your deep abdominals to pull the sleds forward, driving your hips high into an inverted V-pike.",
+      "Pause briefly at the top of the movement.",
+      "Slowly lower the hips and return the sleds along the tracks to the starting plank."
+    ],
+    "category": "strength",
+    "id": "Plank_To_Pike_Straight_Leg",
+    "images": [
+      "Plank_To_Pike_Straight_Leg.png"
+    ]
+  },
+  {
+    "name": "Mountain Climbers",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "hip flexors",
+      "shoulders",
+      "quadriceps"
+    ],
+    "instructions": [
+      "Place one foot on each sliding sled and hold the stationary handles at the front of the board in a push-up position.",
+      "Drive one knee forward along its track while the opposite leg remains extended back.",
+      "Smoothly alternate legs in a continuous sliding motion along the dual tracks.",
+      "Keep hips low and core braced throughout the set."
+    ],
+    "category": "plyometrics",
+    "id": "Mountain_Climbers",
+    "images": [
+      "Mountain_Climbers.png"
+    ]
+  },
+  {
+    "name": "Standing Reverse Lunge Slide",
+    "force": "push",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "instructions": [
+      "Stand beside the board with your front foot planted firmly on the floor and the rear foot placed on one sliding sled.",
+      "Lower into a lunge by sliding the rear sled backward along the track until the back knee nears the floor.",
+      "Drive through the heel of the front standing foot to pull the sled back to the starting position.",
+      "Complete all repetitions on one side before switching."
+    ],
+    "category": "strength",
+    "id": "Standing_Reverse_Lunge_Slide",
+    "images": [
+      "Standing_Reverse_Lunge_Slide.png"
+    ]
+  },
+  {
+    "name": "Kneeling Lunge Slide (Knees on Board)",
+    "force": "push",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hip flexors"
+    ],
+    "instructions": [
+      "Place the mini foam knee pad on the board base for protection, resting one knee on it and placing the opposite foot on a sliding sled.",
+      "Slide the carriage pad forward by extending the working leg into a deep lunge stance.",
+      "Contract the hamstrings and glutes to pull the sled back along the dual tracks to the start.",
+      "Perform all reps on one leg, then switch."
+    ],
+    "category": "strength",
+    "id": "Kneeling_Lunge_Slide_Knees_On_Reformer",
+    "images": [
+      "Kneeling_Lunge_Slide_Knees_On_Reformer.png"
+    ]
+  },
+  {
+    "name": "Side Lunge Slide",
+    "force": "push",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "adductors",
+      "hamstrings"
+    ],
+    "instructions": [
+      "Stand parallel to the board with one foot on the solid floor and one foot on a sliding sled.",
+      "Bend the stationary leg to lower into a squat while sliding the carriage sled outward along the rail.",
+      "Press through the stationary foot and squeeze the inner thighs to slide the sled back into the center.",
+      "Repeat for reps before switching sides."
+    ],
+    "category": "strength",
+    "id": "Side_Lunge_Slide",
+    "images": [
+      "Side_Lunge_Slide.png"
+    ]
+  },
+  {
+    "name": "Side Plank with Leg Lift",
+    "force": "static",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abductors"
+    ],
+    "secondaryMuscles": [
+      "abdominals",
+      "obliques",
+      "shoulders"
+    ],
+    "instructions": [
+      "Rest your bottom elbow on the padded sled (locked at one end of the track) and stack your feet on the floor.",
+      "Raise your hips into a side plank, keeping your body aligned from head to heels.",
+      "Lift your top leg straight up toward the ceiling against gravity or an attached ankle band.",
+      "Lower the leg with control and repeat before switching sides."
+    ],
+    "category": "strength",
+    "id": "Side_Plank_With_Leg_Lift",
+    "images": [
+      "Side_Plank_With_Leg_Lift.png"
+    ]
+  },
+  {
+    "name": "Rainbows",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "abductors",
+      "lower back"
+    ],
+    "instructions": [
+      "Kneel on the platform base pad with hands supported on the corner posts and one foot attached to an integrated resistance band.",
+      "Extend the working leg straight back and sweep it in an arc up and over the midline from left to right.",
+      "Tap the toe lightly on each side before arcing back to the start position.",
+      "Complete reps on one leg before switching."
+    ],
+    "category": "strength",
+    "id": "Rainbows",
+    "images": [
+      "Rainbows.png"
+    ]
+  },
+  {
+    "name": "Prone Leg Pull-Back",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "lower back"
+    ],
+    "instructions": [
+      "Lie face down on an adjacent mat with one foot hooked into the platform's resistance band cord.",
+      "Keeping the working leg extended straight, contract the glute to pull the band backward and upward.",
+      "Squeeze at the top of the contraction for one second.",
+      "Return with control to the starting position."
+    ],
+    "category": "strength",
+    "id": "Prone_Leg_Pull_Back",
+    "images": [
+      "Prone_Leg_Pull_Back.png"
+    ]
+  },
+  {
+    "name": "Bird Dog",
+    "force": "static",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "lower back"
+    ],
+    "secondaryMuscles": [
+      "abdominals",
+      "glutes",
+      "shoulders"
+    ],
+    "instructions": [
+      "Kneel on the board's central pad on all fours, holding one resistance handle in your hand.",
+      "Simultaneously extend the arm forward with the resistance band while extending the opposite leg straight back.",
+      "Hold the full extension for 2 seconds with core braced and hips square.",
+      "Return to all fours with control and alternate sides."
+    ],
+    "category": "strength",
+    "id": "Bird_Dog",
+    "images": [
+      "Bird_Dog.png"
+    ]
+  },
+  {
+    "name": "Plank Arm Extension",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "shoulders"
+    ],
+    "secondaryMuscles": [
+      "abdominals",
+      "triceps",
+      "lower back"
+    ],
+    "instructions": [
+      "Assume a high plank or kneeling plank with one hand on a sliding sled pad and the other hand anchored on the platform.",
+      "Slide the arm on the sled pad straight forward along the guide track while keeping the hips motionless.",
+      "Contract the lat and shoulder muscles to pull the sled back to the starting position.",
+      "Perform all reps on one arm, then switch."
+    ],
+    "category": "strength",
+    "id": "Plank_Arm_Extension",
+    "images": [
+      "Plank_Arm_Extension.png"
+    ]
+  },
+  {
+    "name": "Alternating Single-Arm Ab Slider",
+    "force": "push",
+    "level": "advanced",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "shoulders",
+      "triceps",
+      "lower back"
+    ],
+    "instructions": [
+      "Kneel behind the board with both hands gripping the vertical handles of the dual sliding sleds.",
+      "Keep your core braced as you push one sled forward along its track while keeping the other anchored.",
+      "Pull the active sled back using your core while simultaneously sliding the opposite sled forward.",
+      "Continue in a smooth, controlled alternating arm-rollout pattern."
+    ],
+    "category": "strength",
+    "id": "Alternating_Single_Arm_Ab_Slider",
+    "images": [
+      "Alternating_Single_Arm_Ab_Slider.png"
+    ]
+  },
+  {
+    "name": "Elbow Plank Ab Slider",
+    "force": "static",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "shoulders",
+      "lower back"
+    ],
+    "instructions": [
+      "Place your forearms into the padded sled armrests and hold the vertical handles, resting your knees or toes on the floor.",
+      "Maintain a rigid plank as you push both sleds forward together along the twin tracks.",
+      "Pause at maximum extension without arching the lower back.",
+      "Pull the elbow sleds back toward your torso using your abdominal wall."
+    ],
+    "category": "strength",
+    "id": "Elbow_Plank_Ab_Slider",
+    "images": [
+      "Elbow_Plank_Ab_Slider.png"
+    ]
+  },
+  {
+    "name": "Knee Push-Up to Full Push-Up",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "shoulders",
+      "abdominals"
+    ],
+    "instructions": [
+      "Grasp the dual sled handles with sleds positioned together in the middle of the board.",
+      "Lower your chest toward the sled handles in a push-up motion, keeping elbows at a 45-degree angle.",
+      "Press back up to full arm extension.",
+      "Progress from knees on the central pad to toes on the floor as strength permits."
+    ],
+    "category": "strength",
+    "id": "Knee_Push_Up_To_Full_Push_Up",
+    "images": [
+      "Knee_Push_Up_To_Full_Push_Up.png"
+    ]
+  },
+  {
+    "name": "Squat to Shoulder Press",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "quadriceps"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "shoulders",
+      "triceps"
+    ],
+    "instructions": [
+      "Stand on the stationary board platform with feet shoulder-width apart, holding the resistance band T-handles at shoulder level.",
+      "Lower into a full squat, keeping chest high and knees tracking over toes.",
+      "Drive up through your heels to standing while pressing both resistance handles straight overhead.",
+      "Lower handles back to shoulders with control as you begin the next squat."
+    ],
+    "category": "strength",
+    "id": "Squat_To_Shoulder_Press",
+    "images": [
+      "Squat_To_Shoulder_Press.png"
+    ]
+  },
+  {
+    "name": "Hamstring Curl (Bridge Curl)",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "abdominals"
+    ],
+    "instructions": [
+      "Lie supine on a mat in front of the board with your heels resting on the dual sliding sled pads.",
+      "Drive your hips upward into a glute bridge position.",
+      "Keeping your hips elevated, contract your hamstrings to pull the sleds inward along the tracks toward your glutes.",
+      "Extend your legs back out with control while holding the hip bridge high."
+    ],
+    "category": "strength",
+    "id": "Hamstring_Curl_Bridge_Curl",
+    "images": [
+      "Hamstring_Curl_Bridge_Curl.png"
+    ]
+  },
+  {
+    "name": "Glute Bridge Leg Press",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "quadriceps",
+      "hamstrings"
+    ],
+    "instructions": [
+      "Lie on your back with feet placed flat against the upright sled handles and hips in a bridge position.",
+      "Push against the sled handles to press the sleds away along the tracks, extending the legs.",
+      "Bend knees to control the return of the sleds toward your body while keeping glutes engaged.",
+      "Maintain elevated hips throughout the set."
+    ],
+    "category": "strength",
+    "id": "Glute_Bridge_Leg_Press",
+    "images": [
+      "Glute_Bridge_Leg_Press.png"
+    ]
+  },
+  {
+    "name": "Frog Pump",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "adductors",
+      "hamstrings"
+    ],
+    "instructions": [
+      "Lie on your back with feet soles pressed together, resting outer foot edges on the central platform base.",
+      "Drive your outer feet into the board to lift your hips into a bridge, squeezing glutes hard at peak contraction.",
+      "Lower hips back down until lightly touching the floor, then pulse back up immediately.",
+      "Keep knees flared outward throughout the movement."
+    ],
+    "category": "strength",
+    "id": "Frog_Pump",
+    "images": [
+      "Frog_Pump.png"
+    ]
+  },
+  {
+    "name": "Seated Row",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "middle back"
+    ],
+    "secondaryMuscles": [
+      "biceps",
+      "shoulders"
+    ],
+    "instructions": [
+      "Sit on the floor facing the board with legs extended and feet braced against the front corner posts.",
+      "Grasp the T-bar resistance handles attached to the board with arms extended.",
+      "Sit tall, brace core, and pull the handles toward your ribs while squeezing shoulder blades together.",
+      "Slowly extend arms back out to starting position under band tension."
+    ],
+    "category": "strength",
+    "id": "Seated_Row",
+    "images": [
+      "Seated_Row.png"
+    ]
+  },
+  {
+    "name": "Standing Bicep Curl",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "biceps"
+    ],
+    "secondaryMuscles": [
+      "forearms"
+    ],
+    "instructions": [
+      "Stand on the central baseboard platform, holding a resistance band handle in each hand with palms facing forward.",
+      "Keep elbows pinned to your sides and curl the handles upward toward your shoulders.",
+      "Squeeze biceps firmly at the top of the range.",
+      "Lower handles back down with control against the band tension."
+    ],
+    "category": "strength",
+    "id": "Standing_Bicep_Curl",
+    "images": [
+      "Standing_Bicep_Curl.png"
+    ]
+  },
+  {
+    "name": "Standing Tricep Kickback",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "triceps"
+    ],
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "instructions": [
+      "Stand on the board platform, hinge forward at the hips 45 degrees, and draw elbows up high beside your torso.",
+      "Grasp resistance handles and extend forearms straight back until arms are fully locked out.",
+      "Squeeze triceps intensely for one second at full extension.",
+      "Bend elbows to return handles to hip level with control."
+    ],
+    "category": "strength",
+    "id": "Standing_Tricep_Kickback",
+    "images": [
+      "Standing_Tricep_Kickback.png"
+    ]
+  },
+  {
+    "name": "Supine Chest Press",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "instructions": [
+      "Lie supine on the board platform (or an adjacent mat) with resistance band cords anchored under the base.",
+      "Hold T-handles at chest level with elbows bent at 90 degrees.",
+      "Press handles straight up over the middle of your chest until arms are fully extended.",
+      "Lower handles back to chest height with controlled tempo."
+    ],
+    "category": "strength",
+    "id": "Supine_Chest_Press",
+    "images": [
+      "Supine_Chest_Press.png"
+    ]
+  },
+  {
+    "name": "Supine Chest Fly",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "chest"
+    ],
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "instructions": [
+      "Lie back on the platform base holding resistance handles straight over your chest with a slight elbow bend.",
+      "Open arms wide out to the sides in an arc until feeling a stretch in the pectoral muscles.",
+      "Contract chest muscles to bring handles back together over the middle of the chest.",
+      "Maintain a fixed elbow angle throughout the entire motion."
+    ],
+    "category": "strength",
+    "id": "Supine_Chest_Fly",
+    "images": [
+      "Supine_Chest_Fly.png"
+    ]
+  },
+  {
+    "name": "Renegade Row",
+    "force": "pull",
+    "level": "advanced",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "middle back"
+    ],
+    "secondaryMuscles": [
+      "abdominals",
+      "shoulders",
+      "biceps"
+    ],
+    "instructions": [
+      "Set up in a push-up plank with hands gripping the vertical handles of the dual sleds (locked or braced).",
+      "Keep feet wide for stability and brace your core.",
+      "Row one sled handle up toward your ribcage while stabilizing with the opposite arm.",
+      "Lower back down with control and repeat on the opposite side without twisting hips."
+    ],
+    "category": "strength",
+    "id": "Renegade_Row",
+    "images": [
+      "Renegade_Row.png"
+    ]
+  },
+  {
+    "name": "Plank Jack",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "adductors",
+      "abductors",
+      "shoulders"
+    ],
+    "instructions": [
+      "Place forearms on the board's central pad and feet on the two independent sliding sleds at the rear.",
+      "Slide both feet apart laterally along the guide tracks into a wide stance.",
+      "Contract inner thighs and abs to slide both feet back together to the starting plank.",
+      "Maintain a stable torso height throughout."
+    ],
+    "category": "plyometrics",
+    "id": "Plank_Jack",
+    "images": [
+      "Plank_Jack.png"
+    ]
+  },
+  {
+    "name": "Curtsy Lunge Slide",
+    "force": "push",
+    "level": "intermediate",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "quadriceps",
+      "abductors"
+    ],
+    "instructions": [
+      "Stand in front of the board with front foot planted on the floor and back foot on a sliding sled.",
+      "Slide the carriage sled diagonally back behind the standing leg, lowering into a curtsy lunge.",
+      "Drive up through the front heel and glute to slide the sled back to the front position.",
+      "Complete set on one leg before switching sides."
+    ],
+    "category": "strength",
+    "id": "Curtsy_Lunge_Slide",
+    "images": [
+      "Curtsy_Lunge_Slide.png"
+    ]
+  },
+  {
+    "name": "Fire Hydrant",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "abductors"
+    ],
+    "instructions": [
+      "Kneel on all fours on the platform center with an integrated resistance band looped around one knee/thigh.",
+      "Keeping knee bent at 90 degrees, lift working leg laterally out to the side until thigh is parallel to the floor.",
+      "Pause at the top for peak glute medius contraction.",
+      "Lower leg back down under resistance control."
+    ],
+    "category": "strength",
+    "id": "Fire_Hydrant",
+    "images": [
+      "Fire_Hydrant.png"
+    ]
+  },
+  {
+    "name": "Donkey Kick",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings"
+    ],
+    "instructions": [
+      "Kneel on the platform base facing front, with one foot flexed against a sliding sled pad or resistance band loop.",
+      "Drive the flexed foot straight back and upward along the guide track.",
+      "Squeeze glute at peak contraction with knee bent at 90 degrees.",
+      "Return leg forward to starting position without letting knee touch down roughly."
+    ],
+    "category": "strength",
+    "id": "Donkey_Kick",
+    "images": [
+      "Donkey_Kick.png"
+    ]
+  },
+  {
+    "name": "Standing Hip Abduction",
+    "force": "pull",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abductors"
+    ],
+    "secondaryMuscles": [
+      "glutes"
+    ],
+    "instructions": [
+      "Stand sideways next to the board with the ankle strap of an integrated resistance band secured around your outer ankle.",
+      "Hold a wall or stationary post for balance.",
+      "Lift outer leg straight out to the side against the resistance band tension.",
+      "Lower leg back down slowly and repeat."
+    ],
+    "category": "strength",
+    "id": "Standing_Hip_Abduction",
+    "images": [
+      "Standing_Hip_Abduction.png"
+    ]
+  },
+  {
+    "name": "Kneeling Ab Roll-Out",
+    "force": "pull",
+    "level": "advanced",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "shoulders",
+      "lower back"
+    ],
+    "instructions": [
+      "Kneel behind the board on the foam knee pad, hands grasping both vertical sled handles.",
+      "Keep core locked, glutes squeezed, and lower back flat as you roll both sleds forward together along the twin tracks.",
+      "Extend forward as far as core strength allows without lower back dipping.",
+      "Contract abdominal wall to pull sleds back to knees."
+    ],
+    "category": "strength",
+    "id": "Kneeling_Ab_Roll_Out",
+    "images": [
+      "Kneeling_Ab_Roll_Out.png"
+    ]
+  },
+  {
+    "name": "Standing Oblique Side Bend Pull",
+    "force": "pull",
+    "level": "intermediate",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "abdominals"
+    ],
+    "secondaryMuscles": [
+      "lower back"
+    ],
+    "instructions": [
+      "Stand on the board platform holding a resistance handle in one hand at your side.",
+      "Side bend at the waist away from the anchor point, stretching the working oblique.",
+      "Contract obliques to pull torso back to vertical upright position against resistance.",
+      "Complete reps on one side, then reverse stance."
+    ],
+    "category": "strength",
+    "id": "Standing_Oblique_Side_Bend_Pull",
+    "images": [
+      "Standing_Oblique_Side_Bend_Pull.png"
+    ]
+  },
+  {
+    "name": "Reverse Plank Leg Lift",
+    "force": "static",
+    "level": "advanced",
+    "mechanic": "compound",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "shoulders",
+      "abdominals"
+    ],
+    "instructions": [
+      "Sit on the floor with hands placed behind you on the board base and heels resting on the dual sleds.",
+      "Press hands and heels down to lift hips into a reverse plank alignment.",
+      "Lift one leg off its sled pad a few inches into the air while keeping hips elevated.",
+      "Lower leg and repeat on opposite leg in an alternating sequence."
+    ],
+    "category": "strength",
+    "id": "Reverse_Plank_Leg_Lift",
+    "images": [
+      "Reverse_Plank_Leg_Lift.png"
+    ]
+  },
+  {
+    "name": "Standing Calf Raise",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "calves"
+    ],
+    "secondaryMuscles": [],
+    "instructions": [
+      "Stand on the edge of the board platform with balls of feet supported and heels hanging off slightly.",
+      "Hold resistance band handles at shoulders for added resistance.",
+      "Raise up onto toes as high as possible, contracting calves at top.",
+      "Lower heels below platform edge for a full stretch before repeating."
+    ],
+    "category": "strength",
+    "id": "Standing_Calf_Raise",
+    "images": [
+      "Standing_Calf_Raise.png"
+    ]
+  },
+  {
+    "name": "Overhead Tricep Extension",
+    "force": "push",
+    "level": "beginner",
+    "mechanic": "isolation",
+    "equipment": "mini reformer board",
+    "primaryMuscles": [
+      "triceps"
+    ],
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "instructions": [
+      "Stand on the central baseboard platform holding one resistance handle overhead with both hands.",
+      "Keep upper arms vertical next to ears and bend elbows to lower handle behind your head.",
+      "Contract triceps to extend arms straight overhead.",
+      "Lower back down under smooth control and repeat."
+    ],
+    "category": "strength",
+    "id": "Overhead_Tricep_Extension",
+    "images": [
+      "Overhead_Tricep_Extension.png"
+    ]
+  }
+]
