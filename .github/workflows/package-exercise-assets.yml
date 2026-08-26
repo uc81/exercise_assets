@@ -1,0 +1,113 @@
+name: Package and publish exercise assets
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Exercise asset pack version
+        required: true
+        default: '1'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exercise-assets-release-${{ inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+
+    steps:
+      - name: Require main branch
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ]; then
+            echo "Run this release workflow from the main branch."
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Validate version
+        env:
+          ASSET_VERSION: ${{ inputs.version }}
+        run: |
+          python3 - <<'PY'
+          import os
+
+          value = os.environ['ASSET_VERSION'].strip()
+          if not value.isdigit() or int(value) <= 0:
+              raise SystemExit('version must be a positive integer')
+          PY
+
+      - name: Package complete exercise asset set
+        env:
+          ASSET_VERSION: ${{ inputs.version }}
+        run: |
+          python3 tools/package_exercise_assets.py \
+            --version "$ASSET_VERSION" \
+            --output-dir build/exercise-assets
+
+      - name: Verify generated checksum locally
+        env:
+          ASSET_VERSION: ${{ inputs.version }}
+        run: |
+          cd build/exercise-assets
+          sha256sum --check "exercise-assets-v${ASSET_VERSION}.zip.sha256"
+
+      - name: Reject replacement of existing asset version
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ASSET_VERSION: ${{ inputs.version }}
+        run: |
+          TAG="exercise-assets-v${ASSET_VERSION}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release ${TAG} already exists."
+            echo "Asset versions are immutable. Publish a new version instead."
+            exit 1
+          fi
+
+      - name: Publish ZIP and SHA-256
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ASSET_VERSION: ${{ inputs.version }}
+        run: |
+          TAG="exercise-assets-v${ASSET_VERSION}"
+          ZIP="build/exercise-assets/exercise-assets-v${ASSET_VERSION}.zip"
+          SHA="${ZIP}.sha256"
+
+          gh release create "$TAG" \
+            "$ZIP" \
+            "$SHA" \
+            --target "$GITHUB_SHA" \
+            --title "Exercise assets v${ASSET_VERSION}" \
+            --notes "Complete immutable exercise asset package for first-run local installation."
+
+      - name: Verify public release endpoints
+        env:
+          ASSET_VERSION: ${{ inputs.version }}
+        run: |
+          TAG="exercise-assets-v${ASSET_VERSION}"
+          BASE="https://github.com/uc81/exercise_assets/releases/download/${TAG}"
+          ZIP="exercise-assets-v${ASSET_VERSION}.zip"
+
+          curl --fail --location --silent --show-error --head "${BASE}/${ZIP}" >/dev/null
+          curl --fail --location --silent --show-error --head "${BASE}/${ZIP}.sha256" >/dev/null
+
+          echo "Published archive: ${BASE}/${ZIP}"
+          echo "Published checksum: ${BASE}/${ZIP}.sha256"
+
+      - name: Preserve workflow copy for diagnostics
+        uses: actions/upload-artifact@v4
+        with:
+          name: exercise-assets-v${{ inputs.version }}
+          path: |
+            build/exercise-assets/exercise-assets-v${{ inputs.version }}.zip
+            build/exercise-assets/exercise-assets-v${{ inputs.version }}.zip.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
