@@ -2,10 +2,11 @@
 
 import argparse
 import hashlib
+import json
 import shutil
 import sys
 import zipfile
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 
 REQUIRED_CATALOGS = (
@@ -43,6 +44,107 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def load_catalog(source: Path, filename: str) -> list[dict]:
+    catalog_path = source / filename
+    try:
+        catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RuntimeError(f"Unable to read exercise catalog {filename}: {exc}") from exc
+    if not isinstance(catalog, list) or any(not isinstance(item, dict) for item in catalog):
+        raise RuntimeError(f"Exercise catalog {filename} must contain a JSON array of objects.")
+    return catalog
+
+
+def referenced_file(
+    source: Path,
+    media_directory: str,
+    reference: object,
+    context: str,
+    issues: list[str],
+) -> Path | None:
+    if not isinstance(reference, str) or not reference.strip():
+        issues.append(f"{context}: media path is missing.")
+        return None
+
+    normalized = reference.strip().replace("\\", "/")
+    segments = normalized.split("/")
+    if (
+        normalized.startswith("/")
+        or segments[0].endswith(":")
+        or any(segment in ("", ".", "..") for segment in segments)
+    ):
+        issues.append(f"{context}: unsafe media path {reference!r}.")
+        return None
+
+    relative = PurePosixPath(*segments)
+    source_root = source.resolve()
+    candidate = (source / media_directory / Path(*relative.parts)).resolve()
+    if candidate != source_root and source_root not in candidate.parents:
+        issues.append(f"{context}: media path escapes the exercise asset root.")
+        return None
+    if not candidate.is_file():
+        archive_path = (PurePosixPath(media_directory) / relative).as_posix()
+        issues.append(f"{context}: missing exercises/{archive_path}.")
+        return None
+    return candidate
+
+
+def validate_catalog_media(source: Path) -> None:
+    issues: list[str] = []
+
+    free_exercises = load_catalog(source, "exercises.json")
+    for index, exercise in enumerate(free_exercises):
+        name = exercise.get("name", f"record {index}")
+        context = f"exercises.json[{index}] {name!r}"
+        images = exercise.get("images")
+        image_reference = images[0] if isinstance(images, list) and images else None
+        referenced_file(
+            source, "images", image_reference, f"{context}.images[0]", issues
+        )
+        if isinstance(image_reference, str) and image_reference.strip():
+            image_path = PurePosixPath(image_reference.replace("\\", "/"))
+            gif_reference = image_path.with_suffix(".gif").as_posix()
+            referenced_file(
+                source, "videos", gif_reference, f"{context}.animated GIF", issues
+            )
+
+    hasaneyldrm_exercises = load_catalog(source, "hasaneyldrm_exercises.json")
+    for index, exercise in enumerate(hasaneyldrm_exercises):
+        name = exercise.get("name", f"record {index}")
+        context = f"hasaneyldrm_exercises.json[{index}] {name!r}"
+        referenced_file(
+            source, "", exercise.get("image"), f"{context}.image", issues
+        )
+        referenced_file(
+            source, "", exercise.get("gif_url"), f"{context}.gif_url", issues
+        )
+
+    pilates_exercises = load_catalog(source, "pilates_reformer_exercises.json")
+    for index, exercise in enumerate(pilates_exercises):
+        name = exercise.get("name", f"record {index}")
+        context = f"pilates_reformer_exercises.json[{index}] {name!r}"
+        images = exercise.get("images")
+        image_reference = images[0] if isinstance(images, list) and images else None
+        # AssetExerciseProvider resolves Pilates images by their filename.
+        filename = (
+            PurePosixPath(image_reference.replace("\\", "/")).name
+            if isinstance(image_reference, str) and image_reference.strip()
+            else image_reference
+        )
+        referenced_file(
+            source, "pilates", filename, f"{context}.images[0]", issues
+        )
+
+    if issues:
+        preview = "\\n".join(f"  - {issue}" for issue in issues[:10])
+        remaining = len(issues) - 10
+        suffix = f"\\n  - ... and {remaining} more." if remaining > 0 else ""
+        raise RuntimeError(
+            f"Exercise catalogs contain {len(issues)} missing or invalid media references:\\n"
+            f"{preview}{suffix}"
+        )
+
+
 def validate_source(source: Path) -> None:
     if not source.is_dir():
         raise RuntimeError(f"Exercise asset source directory does not exist: {source}")
@@ -68,6 +170,8 @@ def validate_source(source: Path) -> None:
             "Missing or empty required media directories: "
             + ", ".join(invalid_media_directories)
         )
+
+    validate_catalog_media(source)
 
 
 def write_deterministic_file(
