@@ -136,11 +136,11 @@ def validate_catalog_media(source: Path) -> None:
         )
 
     if issues:
-        preview = "\\n".join(f"  - {issue}" for issue in issues[:10])
+        preview = "\n".join(f"  - {issue}" for issue in issues[:10])
         remaining = len(issues) - 10
-        suffix = f"\\n  - ... and {remaining} more." if remaining > 0 else ""
+        suffix = f"\n  - ... and {remaining} more." if remaining > 0 else ""
         raise RuntimeError(
-            f"Exercise catalogs contain {len(issues)} missing or invalid media references:\\n"
+            f"Exercise catalogs contain {len(issues)} missing or invalid media references:\n"
             f"{preview}{suffix}"
         )
 

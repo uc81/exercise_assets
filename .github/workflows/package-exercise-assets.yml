@@ -44,6 +44,9 @@ jobs:
               raise SystemExit('version must be a positive integer')
           PY
 
+      - name: Test exercise asset reference validation
+        run: python3 -m unittest discover -s tools -p 'test_*.py'
+
       - name: Package complete exercise asset set
         env:
           ASSET_VERSION: ${{ inputs.version }}
